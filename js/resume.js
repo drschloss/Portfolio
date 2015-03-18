@@ -22,7 +22,8 @@ function resume() {
   }
 
   $(document).ready(function() {
-    $('body').text('Blah blah');
+    var testDiv =
+    $('body').html('Blah blah');
   });
 }
 
