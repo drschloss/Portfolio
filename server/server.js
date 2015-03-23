@@ -36,6 +36,7 @@ function server(args) {
     var content = '',
     fileName = path.basename(req.url);
     console.log(req.url.toString());
+    console.log(req.connection.remoteAddress);
     if (req.method === 'POST') {
       req.on('data', function(data) {
         queryType = data.toString("utf8").split("=")[1];
